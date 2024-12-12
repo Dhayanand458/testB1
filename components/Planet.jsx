@@ -7,7 +7,7 @@ const Planet = ({ count }) => {
     const mesh = useRef()
     const { handleFocus } = useCamera()
 
-    const texture = useLoader(TextureLoader, '/textures/planet.jpg')
+    const texture = useLoader(TextureLoader, './textures/planet.jpg')
 
     // Create a random color for each instance
     const instanceColors = useMemo(() => {
